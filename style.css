@@ -1,0 +1,277 @@
+/*  Developer Name: Matt Young.  Date: Aug 18, 2023 Assignment:  Semester 2 - Final Sprint  */
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@200&family=Nanum+Myeongjo&family=Poppins:wght@200&display=swap");
+
+:root {
+  --primary: #ffb168;
+}
+
+* {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.nav {
+  background-color: rgba(0, 13, 28, 0.5);
+  height: 100vh;
+  width: 224px;
+  min-width: 150px;
+  float: left;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  color: white;
+  font-size: 18pt;
+  text-decoration: none;
+  box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  backdrop-filter: blur(10px);
+}
+
+.nav img {
+  max-width: 80px;
+  max-height: 80px;
+  margin: 50px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+.nav a:hover {
+  text-shadow: 0px 0px 8px white;
+}
+
+.line {
+  height: 1px;
+  background-color: var(--primary);
+  width: 100px;
+  margin: auto;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+#home,
+#about,
+#projects,
+#contact {
+  height: 100vh;
+  min-width: 400px;
+  text-align: center;
+  margin-left: 224px;
+}
+
+.section {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 60px;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.3);
+  height: calc(100vh - 120px);
+  min-width: 360px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 20px 20px 20px 20px;
+}
+
+.content a {
+  color: white;
+}
+
+#home {
+  z-index: 10;
+  content-visibility: visible;
+}
+
+#home h1 {
+  color: #fff;
+  font-size: 72px;
+  font-weight: 200;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.lastName {
+  color: var(--primary);
+}
+
+#home h3 {
+  color: #fff;
+  font-size: 36px;
+  line-height: normal;
+  margin-top: 40px;
+}
+
+#home img {
+  border: 7px solid var(--primary);
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
+}
+
+#about {
+  color: white;
+}
+
+.projectPage {
+  display: block;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+#projectList,
+#projectDetails {
+  margin-top: 20px;
+  position: relative;
+  height: calc(100% - 60px);
+  bottom: 0;
+  width: calc(50% - 10px);
+}
+
+#projectList {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(30%);
+}
+
+#projectList li {
+  list-style: none;
+  font-size: 16pt;
+  cursor: pointer;
+}
+
+#projectDetails {
+  float: right;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: calc(70% - 10px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.select {
+  transition: 0.1s;
+  height: 32%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select:hover {
+  color: var(--primary);
+}
+
+.select.active {
+  text-shadow: none;
+  border: none;
+  border: #ffb168 solid 1px;
+  color: white;
+}
+
+.details {
+  position: absolute;
+  content-visibility: hidden;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.details.active {
+  content-visibility: visible;
+  transform: translateX(0);
+  transition: 1s ease;
+  opacity: 1;
+}
+
+.details h2 {
+  display: block;
+  justify-content: center;
+  font-size: 18pt;
+}
+
+.onePic img,
+.onePic video {
+  position: relative;
+  max-width: calc(100% - 40px);
+  max-height: 50vh;
+  margin: 20px 0px 10px 0px;
+}
+
+.twoPic {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.twoPic img {
+  position: relative;
+  max-width: calc(50% - 20px);
+  max-height: 50vh;
+  margin: 20px 0px 10px 0px;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: fixed;
+  top: 0;
+  background-color: rgb(0, 95, 107);
+  background-image: url(images/gurpreet-singh-s3kXssDRxh4-unsplash-2.jpg);
+  background-size: 100%;
+  width: 100vw;
+  height: calc(100vh * 1.9);
+  transform: translateZ(-5px) scale(6);
+  z-index: -10;
+}
+
+#aws {
+  position: absolute;
+  bottom: 10px;
+  align-self: center;
+}
+
+#aws img {
+  width: 80px;
+}
+
+p {
+  font-size: 14pt;
+  margin: 10px;
+}
+
+h2 {
+  font-size: 24pt;
+}
+
+#watermark {
+  position: fixed;
+  font-size: 50vh;
+  transform: translateY(-10%);
+  color: rgba(0, 0, 0, 0.15);
+  z-index: -1;
+  margin: auto;
+  align-self: center;
+  font-weight: bolder;
+}

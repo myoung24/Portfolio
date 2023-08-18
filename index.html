@@ -1,0 +1,131 @@
+<!--  Developer Name: Matt Young.  Date: Aug 18, 2023. Assignment: Semester 2 - Final Sprint. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matt Young</title>
+    <link rel="icon" type="image/x-icon" href="/images/Logo.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--Nav bar on side-->
+    <div class="nav">
+      <img src="images/Logo.png" alt="logo" />
+      <h3><a href="#home">Home</a></h3>
+      <div class="line"></div>
+      <h3><a href="#about">About</a></h3>
+      <div class="line"></div>
+      <h3><a href="#projects">Projects</a></h3>
+      <div class="line"></div>
+      <h3><a href="#contact">Contact</a></h3>
+      <div class="line"></div>
+    </div>
+    <!--Main page-->
+    <main>
+      <div class="parallax">
+        <div class="parallax__layer"></div>
+        <div id="home">
+          <div class="section">
+            <img src="images/Logo.png" alt="Matt" />
+            <h1>Matt <span class="lastName">Young</span></h1>
+            <h3>UI/UX & Web Design</h3>
+          </div>
+        </div>
+        <div id="about">
+          <div class="section">
+            <div class="content">
+              <h2>About Me</h2>
+              <p>
+                My name is Matt Young. I'm a current student of Keyin College's
+                Software Development program, living in St. John's,
+                Newfoundland.
+              </p>
+              <p>
+                I have experience using Python, HTML, CSS, JavaScript, and
+                React. I enjoy creating innovative designs and taking on new
+                development challenges.
+              </p>
+              <p>
+                Some of my other hobbies include video games, playing music,
+                woodworking, and aviation.
+              </p>
+              <div id="aws">
+                <img src="images/AWS.png" alt="aws" /><br />AWS Academy Graduate
+                - AWS Academy Cloud Foundations
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="projects">
+          <div class="section">
+            <div class="content projectPage">
+              <h2>Projects</h2>
+              <div id="projectList">
+                <li class="select active">"Pens of Haute Culture"</li>
+                <li class="select">"Night Shift"</li>
+                <li class="select">"Doggie Database"</li>
+              </div>
+              <div id="projectDetails">
+                <!-- Project slides -->
+                <div class="details active">
+                  <h2>Pens of Haute Culture</h2>
+                  <div class="onePic">
+                    <img src="images/pen2.png" alt="Pens" />
+                  </div>
+                  <p>
+                    An e-commerce website developed by myself and two other team
+                    members showcasing our knowledge of JavaScript & React.
+                  </p>
+                </div>
+                <div class="details onePic">
+                  <h2>Night Shift</h2>
+                  <video src="images/Night_Shift.mov" autoplay loop></video>
+                  <p>
+                    Developed using Python in conjunction with Pygame, this
+                    two-player game was my initial personal project created with
+                    Python, and was designed and programmed entirely by myself.
+                  </p>
+                  <a
+                    href="https://github.com/myoung24/Night-Shift---Game"
+                    target="_blank"
+                    >GitHub link here</a
+                  >
+                </div>
+                <div class="details onePic">
+                  <h2>Doggie Database</h2>
+                  <img src="images/dogs.png" alt="Dogs" />
+                  <p>
+                    This website was designed by myself and two other team
+                    members demonstrating some features of JavaScript, HTML, and
+                    CSS.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contact">
+          <div class="section">
+            <div class="content">
+              <div id="watermark">@</div>
+              <h2>Contact Me</h2>
+              <br />
+              <p>Email: matt.young@keyin.com</p>
+              <a
+                href="https://www.linkedin.com/in/matt-young-424b56194/"
+                target="_blank"
+              >
+                <p>Visit my LinkedIn profile</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
